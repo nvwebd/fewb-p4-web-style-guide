@@ -1,0 +1,34 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+// === BUTTONS === //
+
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: $font-color;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.default {
+  @include btn-hover-color($default-color);
+}
+
+.error {
+  @include btn-hover-color($error-color);
+}
+
+.info {
+  @include btn-hover-color($info-color);
+}
+
+.success {
+  @include btn-hover-color($success-color);
+}
+
+.warning {
+  @include btn-hover-color($warning-color);
+}
