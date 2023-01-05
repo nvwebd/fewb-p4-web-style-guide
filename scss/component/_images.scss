@@ -1,0 +1,30 @@
+@import '../utilities/index';
+
+// === IMAGES === //
+
+%_image-base {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%_image-sizing {
+  @extend %_image-base;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.img-avatar {
+  @extend %_image-sizing;
+  max-height: 100%;
+}
+
+.img-frame {
+  @extend %_image-sizing;
+  padding: 13px;
+  border: 1px solid $gray-light;
+}
+
+.img-logo {
+  @extend %_image-base;
+}

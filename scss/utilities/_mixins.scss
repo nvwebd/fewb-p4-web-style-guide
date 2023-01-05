@@ -1,0 +1,10 @@
+@mixin btn-hover-color ($background-btn-color) {
+  & {
+    background-color: $background-btn-color;
+  }
+
+  &:hover {
+    background-color: lighten($background-btn-color, 15%);
+    cursor: pointer;
+  }
+}
